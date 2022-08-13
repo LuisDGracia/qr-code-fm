@@ -9,6 +9,9 @@
 
 * {
     font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -32,6 +35,56 @@ p {
 .grayish_blue {
     background-color: var(--grayish_blue);
 }
+
 .dark_blue {
     background-color: var(--dark_blue);
 }
+
+.text-gray {
+    color: var(--grayish_blue);
+}
+
+.main-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.card {
+    height: fit-content;
+
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.card__qr {
+    max-width: 100%;
+
+    margin-bottom: 15px;
+}
+
+.card__qr figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card__header {
+    margin-bottom: 10px;
+}
+
+.card__header p{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card__body {
+    font-weight: 400;
+    text-align: center;
+}
+
